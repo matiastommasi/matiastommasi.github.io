@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing LLM</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .editor { width: 45%; float: left; margin-right: 5%; }
+        button { padding: 10px 20px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        #response { white-space: pre-wrap; margin-top: 20px; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <div class="editor">
+        <h3>Input 1 (Contexto):</h3>
+        <textarea id="input1" rows="15" style="width: 100%;"></textarea>
+    </div>
+    <div class="editor">
+        <h3>Input 2 (Pregunta/Instrucción):</h3>
+        <textarea id="input2" rows="15" style="width: 100%;"></textarea>
+    </div>
+    <div style="clear: both;"></div>
+    <button onclick="runLLM()">Run ▶️</button>
+    <h3>Respuesta del LLM:</h3>
+    <div id="response">...</div>
+    <script src="script.js"></script>
+</body>
+</html>
